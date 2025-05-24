@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Meggle</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg pavi sticky-top" style="padding:0px">
+
+<div class="container-fluid" style="font-size:150%">
+
+<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Avatar Logo" width="100px"></a>
+
+ <button class="navbar-toggler ja" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header text-dark" style="background-color:#021b46">
+        <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Meni</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+<div class="offcanvas-body pavi" style="padding:0px;">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 tab">
+
+    <li class="nav-item">
+
+      <a class="nav-link active" aria-current="page" href="index.html">Doma</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="nama.html">O nama</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="recepti.html">Recepti</a>
+
+    </li>
+
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="kontakt.html">Kontakt</a>
+
+    </li>
+    
+  </ul>
+
+</div>
+</div>
+</div>
+
+</nav>
+
+<header class="w-100 d-flex">
+    
+<div id="demo" class="carousel slide w-100 container" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/HeaderImg1.jfif" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/HeaderImg2.jfif" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/HeaderImg3.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</header>
+<!-- site -->
+
+
+<main class="container meg">
+    <section class="py-4">
+    <hr color="#05368c" size="5px" style="width:70%;margin:auto">
+    <h1 class="naslov meg">Imate prijedlog? Kontaktirajte nas!</h1>
+    <hr color="#05368c" size="5px">
+    <form class="needs-validation row forum text-white <?=$klasa?>" method="post" novalidate>
+        <div class="col-12 col-md-6">
+        
+        <div class="mb-3">
+            <div class="row">
+
+                <div class="col">
+            <label for="ime" class="form-label">Ime</label>
+    <input type="text" class="form-control" id="ime" placeholder="Petar" required>
+    <div class="invalid-feedback">
+        Molim vas unesite vaše ime
+      </div>
+    </div>
+
+    <div class="col">
+            <label for="Prezime" class="form-label">Prezime</label>
+    <input type="text" class="form-control" id="Prezime" placeholder="Delić" required>
+    <div class="invalid-feedback">
+        Molim vas unesite vaše prezime
+      </div>
+    </div>
+
+    </div> <!-- row gotov-->
+
+
+    <label for="Email" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="Email" placeholder="Petard@gmail.com" required>
+    <div class="invalid-feedback">
+    Molim vas unesite vaš email
+      </div>
+      
+    <label for="tema" class="form-label">Tema poruke</label>
+    <input type="text" class="form-control" id="tema" placeholder="Tema" required>
+
+</div>    
+
+  </div>
+  <div class="col-12 col-md-6">
+        
+        <div class="mb-3">
+        
+
+<label for="zalba" class="form-label">Vaša cijenjena poruka</label>
+  <textarea class="form-control" placeholder="Komentar" id="zalba" style="height: 115px; max-height:200px; min-height:200px" required></textarea>
+  <div class="invalid-feedback">
+        Unesite komentar
+      </div>
+
+  </div>
+  </div>
+
+  <div class="d-md-flex justify-content-end py-4">
+    
+  <button type="Dugme" name="Dugme" value="Dugme" class="btn btn-primary">Pošalji</button>
+  </div>    
+ 
+    </form>
+   
+  </section>
+
+
+
+
+
+  <section class="py-4">
+  <div class="row">
+  <div class="col-12 col-md-5 forum" style="padding:0px">
+    <div class="kart text-white">Lokacija</div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6731.650194025485!2d15.885724818744976!3d44.81524359490889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47613f89c1e6c641%3A0xecad73aeb89819aa!2sMEGGLE%20BH%20d.o.o.%20Biha%C4%87!5e0!3m2!1shr!2sba!4v1697919949160!5m2!1shr!2sba" width="100%" height="400" style="padding:10px" ></iframe>
+  </div>  
+  <div class="col-12 col-md-5 forum" style="padding:0px">
+  <div class="kart text-white">Informacije</div>
+  <div class="tkst text-white">
+            <p>
+            </p><h3>MEGGLE GmbH &amp; Co. KG</h3><br>
+            <span>Business Unit Excipients</span>
+            <p></p>
+            <p>
+                <span>Megglestrasse 6-12</span><br>
+                <span>83512 Wasserburg am Inn</span><br>
+                <span>Germany</span>
+            </p>
+            <p>T +49 8071 73-0</p>
+            <p><a href="mailto:info.excipients@meggle.com">info.excipients@meggle.com</a></p>
+
+  </div>
+  </div>
+</div>
+
+</section>
+  </main>
+
+  
+  <footer class="d-flex border-top pavi text-white " style="height:100px; ">
+  <div class="d-flex flex-column mb-3 align-items-center"style="width:90%; margin:auto;">
+ 
+    
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Avatar Logo" width="100px"></a>
+      &copy; 2025 Meggle
+
+</div>
+
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
